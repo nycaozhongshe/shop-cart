@@ -1,0 +1,151 @@
+	@font-face {
+			font-family: 'iconfont';
+			src: url('http://at.alicdn.com/t/font_gkz6vvi6c99newmi.eot');
+			src: url('http://at.alicdn.com/t/font_gkz6vvi6c99newmi.eot?#iefix') format('embedded-opentype'), url('http://at.alicdn.com/t/font_gkz6vvi6c99newmi.woff') format('woff'), url('http://at.alicdn.com/t/font_gkz6vvi6c99newmi.ttf') format('truetype'), url('http://at.alicdn.com/t/font_gkz6vvi6c99newmi.svg#iconfont') format('svg');
+		}
+		
+		.iconfont {
+			font-family: 'iconfont';
+			color: #eebbcb;
+		}
+		
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 1em;
+			vertical-align: middle;
+			font-weight: normal;
+		}
+		
+		.section {
+			width: 33%;
+			float: left;
+			overflow: hidden;
+			border-right: 4px solid #eaf4fc;
+			background: #f8fbf8;
+			margin-top: 60px;
+		}
+		
+		.list-wrap {
+			background: #f8fbf8;
+		}
+		
+		.cart-wrap,
+		.group-wrap,
+		.name-wrap {
+			width: 100%;
+			height: 920px;
+			overflow-y: auto;
+			color: #8e869d;
+			font-weight: 500;
+			margin: 0 auto;
+		}
+		
+		.cart-wrap {
+			margin-top: 32px;
+		}
+		
+		.content {
+			overflow: hidden;
+		}
+		
+		.allprice {
+			width: 33.33%;
+			position: relative;
+			position: fixed;
+			top: 56px;
+			right: 0;
+			background: #f8fbf8;
+			text-align: center;
+		}
+		
+		.name-wrap,
+		.cart-wrap {
+			width: 102.2%;
+		}
+		
+		.bought {
+			color: #1e50a2;
+			font-size: 1.4em;
+			/*animation: flash 2s ease 0s infinite alternate;*/
+		}
+		
+		@keyframes flash {
+			from,
+			50%,
+			to {
+				opacity: 1;
+			}
+			25%,
+			75% {
+				opacity: 0.4;
+			}
+		}
+		
+		.default {
+			color: #5c5c5c;
+		}
+		
+		.bought1 {
+			color: #d0576b;
+			font-size: 1.1em;
+			/*text-decoration: line-through;*/
+			animation: rollOut .3s ease-in .2s;
+		}
+		
+		.shopping-cart {
+			animation: fadeInDownBig 0.5s ease 0s;
+		}
+		
+		.default1 {
+			color: #5c5c5c;
+		}
+		
+		.food,
+		.total-price {
+			display: inline-block;
+			width: 100px;
+		}
+		
+		.total-price {
+			display: none;
+			font-size: 1.2em;
+			color: #005243;
+		}
+		
+		.food-name,
+		.food-group,
+		.shopping-cart {
+			text-align: center;
+			margin: 0 auto;
+			height: 36px;
+		}
+		
+		.name-title,
+		.food-title,
+		.cart-title {
+			width: 33.33%;
+			background: #eaf4fc;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2);
+			margin-bottom: 8px;
+			text-align: center;
+			color: #999;
+			position: fixed;
+		}
+		
+		.food-title {
+			left: 33.33%
+		}
+		
+		.cart-title {
+			right: 0;
+		}
+		
+		.btn {
+			width: 40px;
+			height: 30px;
+			background: #7ebeab;
+			border: none;
+			border-radius: 4px;
+			color: #fffffc;
+			font-size: 16px;
+		}

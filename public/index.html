@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta content="email=no" name="format-detection" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>Document</title>
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="自己填">
+    <meta name="author" content="caozhongshe">
+    <link rel="stylesheet" href="css/cormalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/type.css" />
+</head>
+
+<body>
+    <div id="app" class="list-wrap">
+        <tit></tit>
+        <clear v-on:del='delAll' :result1='result'></clear>
+        <div class="content clearfix">
+            <name-wrap v-bind:listl='list' v-on:iss='function(index){ clickName(index)}'></name-wrap>
+            <food-wrap :arrl='arr' v-on:food='function(i){clickFood(i)}'></food-wrap>
+            <shopping-cart :cart1='cart' v-on:cart='function(j){delFood(j)}'></shopping-cart>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.3.2/vue.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.16.1/axios.js"></script>
+    <script type="text/javascript" src='js/flie.js'></script>
+</body>
+
+</html>
